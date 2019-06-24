@@ -5,13 +5,11 @@
 方法：获取缓存，删除缓存
 """
 import pickle
-
 from flask import current_app
 from redis import RedisError
 from rediscluster import StrictRedisCluster
 from sqlalchemy.exc import DatabaseError
 from sqlalchemy.orm import load_only
-
 from cache.constants import UserCacheTTL, DefaultCacheTTL
 from models.user import User
 
